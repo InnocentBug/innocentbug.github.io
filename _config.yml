@@ -20,13 +20,13 @@
 
 title: Ludwig Schneider
 email: ludwigschndr@gmail.com
-description: Innovative Software and ML/AI Engineer transitioning from a Computational Postdoctoral Researcher role, proficient in \texttt{C/C++}, \texttt{python} backend and high-performance software development and experienced in developing and training novel ML/AI solutions.
+description: Innovative Software and ML/AI Engineer with advanced proficiency in C/C++, CUDA, Python, and high-performance development, and a demonstrated history creating ML/AI solutions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ludwigschneider.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: InnocentBug
 
 # Build settings
-theme: minima
+theme: cayman
 plugins:
   - jekyll-feed
 
