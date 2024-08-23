@@ -1,0 +1,39 @@
+navbar_entries:
+  - title: about
+    url: about
+
+  - title: blog
+    url: blog
+
+  - title: website
+    url: https://www.ludwigschneider.net
+
+project_entries:
+  - title: SOMA2
+    url: soma2-intro
+    desc: SOMA2 is a modern refactoring of SOMA with C++ and python.
+
+old_project_entries:
+  - title: Block Copolymer Morphologies
+    url: block-copolymers
+    desc: Block Copolymers are a fascnicating research topic, diving into the nano-world of plastic materials
+
+footer_entries:
+  - title: Ludwig's homepage
+    url: https://www.ludwigschneider.net
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/dr-ludwig-schneider/
+
+  - title: github
+    url: https://github.com/InnocentBug
+
+  - title: google scholar
+    url: https://scholar.google.de/citations?user=OqTaGAUAAAAJ&hl=en&oi=ao
+
+  - title: orcid
+    url: https://orcid.org/0000-0002-3910-8217
+
+misc_entries:
+  - title: this is an example vertical list
+    url: false
