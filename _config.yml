@@ -2,7 +2,7 @@ title: Ludwig Schneider
 author: Ludwig Schneider
 url: https://www.ludwigschneider.net
 description: >
-  Innovative Software and ML/AI Engineer seeking a role as machine learning engineer in R\&D,
+  Innovative Software and ML/AI Engineer seeking a role as machine learning engineer in R&D,
   with advanced proficiency in C/C++, CUDA, Python, and high-performance software development,
   and a demonstrated history creating ML/AI solutions.
 
@@ -19,7 +19,7 @@ remote_theme: abhinavs/moonwalk
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
-  back_home_text: "home.." # customize text for homepage link in post layout
+  back_home_text: "home: cd ~/" # customize text for homepage link in post layout
   date_format: "%m-%d-%Y" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar

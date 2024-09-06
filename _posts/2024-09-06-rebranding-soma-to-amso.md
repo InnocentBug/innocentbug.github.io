@@ -1,3 +1,9 @@
+---
+layout: post
+author: Ludwig Schneider
+tags: [amso, soma]
+---
+
 # Rebranding SOMA2L AMSO
 
 SOMA is a success, so with this refactoring of SOMA we want to continue to build on that.
