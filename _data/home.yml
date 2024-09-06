@@ -9,9 +9,10 @@ navbar_entries:
     url: https://www.ludwigschneider.net
 
 project_entries:
-  - title: SOMA2
-    url: soma2-intro
-    desc: SOMA2 is a modern refactoring of SOMA with C++ and python.
+  - title: SOMA 2
+    url: soma-2-motivation
+    desc: SOMA 2 is SOMA refactored with C++ and python.
+    highlight: WIP
 
 old_project_entries:
   - title: Block Copolymer Morphologies
