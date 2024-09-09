@@ -54,3 +54,16 @@ ul.horizontal-list {
     }
   }
 }
+
+ul.vertical-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  li a {
+    display: block;
+  }
+}
