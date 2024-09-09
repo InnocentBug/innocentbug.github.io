@@ -47,13 +47,10 @@ layout: post
       const tocList = document.getElementById("toc-list");
       const headers = document.querySelectorAll("article h1, article h2, article h3");
       
-      headers.forEach(function(header, index) {
+      headers.forEach(function(header) {
 	  const listItem = document.createElement("li");
 	  const link = document.createElement("a");
-	  const headerId = "header-" + index;
-
-	  header.setAttribute("id", headerId); // Set ID for the headers
-	  link.setAttribute("href", "#" + headerId);
+	  link.setAttribute("href", "#" + header.id);
 	  link.textContent = header.textContent;
 
 	  listItem.appendChild(link);
