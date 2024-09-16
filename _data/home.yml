@@ -14,6 +14,14 @@ project_entries:
     desc: AMSO is SOMA refactored with C++ and python.
     highlight: WIP
 
+  - title: SOMA
+    url: soma
+    desc: SOMA - HPC Monte-Carlo for Polymers
+
+  - title: PySAGES
+    url: pysages
+    desc: No compromises in usability and speed for enhanced-sampling methods
+
 old_project_entries:
   - title: Block Copolymer Morphologies
     url: block-copolymers

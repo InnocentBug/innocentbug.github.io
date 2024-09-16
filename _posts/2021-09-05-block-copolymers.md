@@ -12,7 +12,7 @@ The self-assembly of block copolymers allows access to the nanometer scale by co
 
 Battery electrolytes require two major properties: i) ion-conductivity and ii) mechanical stability. Diblock copolymer materials offer the opportunity to provide each property with one of the two blocks. The chemistry of each block can be optimized to excel in its job.
 
-![Hierarchical visualization of block copolymer morphologies](images/research/block-copolymer-combined.png)
+![Hierarchical visualization of block copolymer morphologies](assets/images/research/block-copolymer-combined.png)
 
 However, the morphology needs to be bicontinuous to provide their functions macroscopically to the bulk, which is at odds with the equilibrium phase diagram. I investigate kinetically trapped morphologies for their suitability for this application on engineering length scales up to micrometers with simulations of billions of particles - only possible via HPC GPU simulation with my software SOMA.
 
