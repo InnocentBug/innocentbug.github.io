@@ -8,7 +8,7 @@ description: >
 
 permalink: /:slug
 
-favicon: "./logo.png"
+favicon: "./assets/images/favicon/logo.png"
 
 # twitter:
 #     username: none

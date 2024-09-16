@@ -42,7 +42,7 @@ While I won't be purchasing a domain, I've reserved the [readthedocs address](ht
 
 The new logo simply swaps some letters from the original SOMA design:
 
-![AMSO Logo](images/research/amso_logo.svg)
+![AMSO Logo](assets/images/research/amso_logo.svg)
 
 ### Acronym Selection
 
@@ -69,6 +69,6 @@ The original SOMA name was chosen for multiple reasons:
 
 The original SOMA logo, designed by Max. M. Schneider, reflected these ideas:
 
-![SOMA Logo](images/research/soma_logo.svg)
+![SOMA Logo](assets/images/research/soma_logo.svg)
 
 For scientific publication, SOMA became an acronym: SOft coarse grained Monte-Carlo Acceleration. An alternative, recursive acronym was also considered: Soma Offers Monte-Carlo Acceleration, though it wasn't used in the official publication due to its lack of specificity.
