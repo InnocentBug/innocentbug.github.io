@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog
 author: Ludwig Schneider
 tags: [Slip-Spring, SLSP, Polymer, Dynamics]
 ---
