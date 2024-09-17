@@ -27,6 +27,18 @@ old_project_entries:
     url: block-copolymers
     desc: Block Copolymers are a fascinating research topic, diving into the nano-world of plastic materials
 
+  - title: The Slip-Spring Model
+    url: block-copolymers
+    desc: Polymer dynamics for soft, coarse-grained polymer melts
+
+  - title: ML/AI accelerating Nano-Materials
+    url: ai-particle-dynamics
+    desc: Combining particle simulations (SOMA) with ML enables insights into large systems
+
+  - title: G-BigSMILES
+    url: g-bigsmiles
+    desc: A line notation to generate new polymer materials
+
 footer_entries:
   - title: Ludwig's homepage
     url: https://www.ludwigschneider.net
