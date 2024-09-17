@@ -27,6 +27,10 @@ old_project_entries:
     url: block-copolymers
     desc: Block Copolymers are a fascinating research topic, diving into the nano-world of plastic materials
 
+  - title: The Slip-Spring Model
+    url: block-copolymers
+    desc: Polymer dynamics for soft, coarse-grained polymer melts
+
 footer_entries:
   - title: Ludwig's homepage
     url: https://www.ludwigschneider.net
