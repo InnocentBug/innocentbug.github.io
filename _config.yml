@@ -51,3 +51,9 @@ plugins:
 exclude:
   - .trunk
   - trunk
+
+defaults:
+  - scope:
+      path: "assets/images/gallery"
+    values:
+      gallery-image: true

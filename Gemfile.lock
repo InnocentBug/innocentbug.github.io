@@ -6,7 +6,7 @@ PATH
       jekyll-feed (~> 0.15.0)
       jekyll-seo-tag
       rouge (~> 3.23.0)
-      webrick (>= 1.8.2)
+      webrick (~> 1.7)
 
 GEM
   remote: https://rubygems.org/
