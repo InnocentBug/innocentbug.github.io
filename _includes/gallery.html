@@ -1,13 +1,21 @@
 <div id="image-grid" class="image-gallery">
-  {% for image in site.static_files %}
-    {% if image.path contains include.folder %}
-      <figure>
-        <a href="{{ site.baseurl }}{{ image.path }}" class="gallery-item">
-          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ site.data.gallery_captions[image_basename].title | default: image_basename }}" />
-	  <span class="image-caption">{{ site.data.gallery_captions[image_basename].title | default: image_basename }}</span>
-        </a>
-        <figcaption>{{ site.data.gallery_captions[image_basename].title | default: image_basename }}</figcaption>
-      </figure>
-    {% endif %}
-  {% endfor %}
+  {% for image in site.static_files %} {% if image.path contains include.folder
+  %}
+  <figure>
+    <a href="{{ site.baseurl }}{{ image.path }}" class="gallery-item">
+      <img
+        src="{{ site.baseurl }}{{ image.path }}"
+        alt="{{ site.data.gallery_captions[image_basename].title | default: image_basename }}"
+      />
+      <span class="image-caption"
+        >{{ site.data.gallery_captions[image_basename].title | default:
+        image_basename }}</span
+      >
+    </a>
+    <figcaption>
+      {{ site.data.gallery_captions[image_basename].title | default:
+      image_basename }}
+    </figcaption>
+  </figure>
+  {% endif %} {% endfor %}
 </div>

@@ -1,6 +1,23 @@
 frog:
-  title: "Reflection of a frog, captured while kayaking Riebold Creek in Door County, Wiscosin."
-  description: "A reflection of a frog, captured while kayaking Riebold Creek in Door County, Wiscosin."
-image2:
-  title: "Mountain Peak"
-  description: "A majestic mountain peak covered in snow"
+  title: "Frog Reflection, Riebold Creek, Door County"
+  full_title: "Reflection of a frog, captured while kayaking Riebold Creek in Door County, Wisconsin."
+
+night-heron:
+  title: "Night Heron, Chicago North Channel"
+  full_title: "Night Heron on the Chicago North Channel"
+
+pictured_rocks1:
+  title: "Waterfall & Rainbow, Pictured Rocks"
+  full_title: "Pictured Rocks National Shoreline: Waterfall at sunset with rainbow"
+
+pictured_rock2:
+  title: "Kayaking Overhang, Pictured Rocks"
+  full_title: "Pictured Rocks National Shoreline: Famous overhang kayak passage"
+
+squirrel:
+  title: "Squirrel, Upper Peninsula Michigan"
+  full_title: "Squirrel in the Upper Peninsula of Michigan"
+
+turtle:
+  title: "Snapping Turtle, Skokie Lagoons"
+  full_title: "Large Snapping Turtle in the Skokie Lagoons"
