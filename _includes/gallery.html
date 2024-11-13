@@ -1,14 +1,13 @@
-<div class="image-gallery">
-  <!-- {% assign image_files = site.static_files | where: "gallery-image", true %} -->
-  {% assign image_files = site.static_files%}
-
-  {% for image in image_files %}
+<div id="image-grid" class="image-gallery">
+  {% for image in site.static_files %}
     {% if image.path contains include.folder %}
-      {% assign image_basename = image.path | split: '/' | last | split: '.' | first %}
-      <a href="{{ site.baseurl }}{{ image.path }}" class="image-gallery-item">
-        <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ site.data.gallery_captions[image_basename].title | default: image_basename }}">
-        <span class="image-caption">{{ site.data.gallery_captions[image_basename].title | default: image_basename }}</span>
-      </a>
+      <figure>
+        <a href="{{ site.baseurl }}{{ image.path }}" class="gallery-item">
+          <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ site.data.gallery_captions[image_basename].title | default: image_basename }}" />
+	  <span class="image-caption">{{ site.data.gallery_captions[image_basename].title | default: image_basename }}</span>
+        </a>
+        <figcaption>{{ site.data.gallery_captions[image_basename].title | default: image_basename }}</figcaption>
+      </figure>
     {% endif %}
   {% endfor %}
 </div>
