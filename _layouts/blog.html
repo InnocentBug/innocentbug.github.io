@@ -20,12 +20,12 @@ layout: blog
 	      <a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
 	      <h1 class="post-title">{{ page.title }}</h1>
 	      {% include date_and_social_share.html %}
-
-            <article>
-              {{ content }}
-            </article>
-          </div>
-        </main>
+	      <article>
+		  {{ content }}
+		  <a href="{{ page.url | relative_url }}" class="back-to-top">Back to the Top</a>
+		</article>
+            </div>
+          </main>
       </div>
 
       {% if site.theme_config.appearance_toggle %}
@@ -43,29 +43,3 @@ layout: blog
 </html>
 
 <script src="{{ 'assets/js/toc.js' | relative_url }}"></script>
-
-<style>
-  #toc {
-      max-height: 100vh;
-      overflow-y: auto;
-      position: sticky;
-      top: 0;
-  }
-
-  #main-content {
-      overflow-y: auto;
-  }
-
-  #content {
-      margin-left: 25%;
-  }
-
-  @media (max-width: 768px) {
-      #toc {
-	  display: none;
-      }
-      #content {
-	  margin-left: 0;
-      }
-  }
-</style>
