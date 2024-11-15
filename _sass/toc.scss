@@ -1,0 +1,24 @@
+#toc {
+  max-height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  margin-left: 1%;
+}
+
+#main-content {
+  overflow-y: auto;
+}
+
+#content {
+  margin-left: 26%;
+}
+
+@media (max-width: 768px) {
+  #toc {
+    display: none;
+  }
+  #content {
+    margin-left: 0;
+  }
+}
