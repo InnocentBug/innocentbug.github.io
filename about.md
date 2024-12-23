@@ -23,6 +23,8 @@ Lake Michigan holds a special place in my heart. Its vast expanse and ever-chang
 
 ## Beyond Nature: Lego
 
-When I'm not out exploring nature, I enjoy spending my time building intricate Lego sets. It's a different kind of creation that allows me to exercise my creativity and problem-solving skills in a unique way.
+When I'm not out exploring nature, I enjoy spending my time building intricate Lego sets. It's a different kind of creation that allows me to exercise my creativity and problem-solving skills in a unique and non-digital way.
+
+Pictures of our Lego sets coming soon...
 
 I hope you enjoy this glimpse into my world of adventure and creativity!
