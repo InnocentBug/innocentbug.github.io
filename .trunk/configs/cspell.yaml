@@ -29,3 +29,13 @@ words:
   - pyproject
   - ctypes
   - nanobind
+  - scikit
+  - numpy
+  - setuptools
+  - pxezdgr
+  - pathspec
+  - tmpnbo
+  - libamso
+  - cpython
+  - platlib
+  - ephem
