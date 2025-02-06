@@ -22,3 +22,10 @@ words:
   - SSAGES
   - CUDA
   - webfactory
+  - SKBUILD
+  - pybind
+  - cpmaddpackage
+  - memarray
+  - pyproject
+  - ctypes
+  - nanobind
