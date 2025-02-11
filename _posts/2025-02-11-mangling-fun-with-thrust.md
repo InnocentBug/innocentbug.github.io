@@ -69,7 +69,7 @@ $ c++filt _Z3fooRSt6vectorIiSaIiEE
 foo(std::vector<int, std::allocator<int> >&)
 ```
 
-The first column of the output is the memory address of our objects, and the second, `t`/`T`, specify that the functions are dynamic/static symbols in the object file. The first row, I do not completely understand, but the second row gives us our expected signature of `foo` when demangled. We do not expect issues for `foo` since there is no `thrust` object in the signature.
+The first column of the output is the memory address of our objects, and the second, `t`/`T`, specify that the functions are dynamic/static symbols in the object file. The first row, we can ignore, but the second row gives us our expected signature of `foo` when demangled. We do not expect issues for `foo` since there is no `thrust` object in the signature.
 
 The situation is different for the `bar` function:
 
@@ -129,7 +129,9 @@ bar(thrust::THRUST_200700___CUDA_ARCH_LIST___NS::host_vector<int, std::allocator
 bar(thrust::THRUST_200700_520_NS::host_vector<int, std::allocator<int> >&)                 // nvcc
 ```
 
-are not identical. The namespace additions after `thrust::` are different. And trying to link those together will result in a linking error.
+are not identical. The namespace additions after `thrust::` are different.
+During the translation with `nvcc` we probably have a macro definition that replaces `_CUDA_ARCH_LIST_` with the appropriate device specification, here `520`. And part is missing when translating with `gcc`.
+Unfortunately, this just passes without error or warning, So trying to link those together will result in a linking error.
 
 Let's examine a short main file to show this[^4].
 
