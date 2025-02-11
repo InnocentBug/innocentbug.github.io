@@ -39,3 +39,11 @@ words:
   - cpython
   - platlib
   - ephem
+  - filt
+  - nvcc
+  - cout
+  - endl
+  - demangled
+  - isystem
+  - NVCC
+  - lcudart
