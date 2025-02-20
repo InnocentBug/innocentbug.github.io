@@ -190,8 +190,6 @@ To use this class meaningfully from Python, we first bind the C++ to Python via 
 Let's look at binding it with `pybind11` first. We create the module `_amso` with `pybind11`. In `AMSO/python/module_amso.cpp`, we have:
 
 ```cpp
-#include
-
 #include "dlpack_pybind.h"
 #include "memarray_cuda.cuh"
 #include "memarray_pybind.h"
