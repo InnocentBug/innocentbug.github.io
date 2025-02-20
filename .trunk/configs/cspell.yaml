@@ -47,3 +47,31 @@ words:
   - isystem
   - NVCC
   - lcudart
+  - Nsight
+  - CCCL
+  - pytest
+  - allclose
+  - thrust
+  - DLCUDA
+  - dltensor
+  - DLPACK
+  - deleter
+  - nullptr
+  - constexpr
+  - DLCPU
+  - strided
+  - RAII
+  - ndarray
+  - dtype
+  - ndim
+  - Pimpl
+  - cupy
+  - CUPY
+  - NUMBA
+  - ndim
+  - NDIM
+  - Malloc
+  - noexcept
+  - Sutter
+  - dtype
+  - strcmp
