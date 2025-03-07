@@ -196,7 +196,8 @@ This will be the workaround in AMSO for now until this bug gets fixed within `th
 
 ## Bug Report
 
-I reported this bug to nvidia and you can find it here.
+I reported this bug to nvidia and you can find it [here](https://developer.nvidia.com/bugs/5154007)
+You may need to have an NVIDIA Developer account to see the bug report unfortunately.
 I am trying to update this post if this gets resolved.
 
 ---
