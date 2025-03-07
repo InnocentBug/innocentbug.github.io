@@ -17,6 +17,8 @@ foo(std::vector<int, std::allocator<int> >&)
 
 Usually, we do not have to worry about this at all, and it happens behind the scenes.
 
+To follow along with this repository, you can find all files to reproduce this on [GitHub](https://github.com/InnocentBug/thrust_mangling) as well.
+
 ## Multi-Language Translation
 
 When we use multiple languages, things get a bit more interesting, because with different languages we may have different compilers translating different units. After translation, the units get linked together. Now, the name mangling has to be identical from the different compilers to allow linking the differently translated units.
@@ -55,7 +57,7 @@ void bar(thrust::host_vector<int>&a);
 We can translate this into an object file using `nvcc` like this[^3]:
 
 ```shell
-$ nvcc -std=c++17 -x cu -c ../nvcc.cu -o nvcc.cu.o
+$ nvcc -std=c++17 -x cu -c nvcc.cu -o nvcc.cu.o
 nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
 ```
 
@@ -99,7 +101,7 @@ void do_work(){
 This code we want to translate with `g++` since it does not contain any CUDA-specific code.
 
 ```shell
-g++ -isystem /usr/local/cuda-12.8/include -std=c++17 -c ../gcc.cpp -o gcc.cpp.o
+g++ -isystem /usr/local/cuda-12.8/include -std=c++17 -c gcc.cpp -o gcc.cpp.o
 ```
 
 Same as before, we can inspect the translated object file.
@@ -146,7 +148,7 @@ int main(){
 And compile and link it like so:
 
 ```shell
-$ g++ -std=c++17 ../main.cpp nvcc.cu.o gcc.cpp.o -L /usr/local/cuda-12/lib64/ -lcudart -o main
+$ g++ -std=c++17 main.cpp nvcc.cu.o gcc.cpp.o -L /usr/local/cuda-12/lib64/ -lcudart -o main
 nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
 /usr/bin/ld: gcc.cpp.o: in function `do_work()':
 gcc.cpp:(.text+0x5d): undefined reference to `bar(thrust::THRUST_200700___CUDA_ARCH_LIST___NS::host_vector<int, std::allocator<int> >&)'
@@ -162,7 +164,7 @@ The problem arises because `g++` and `nvcc` translate the `thrust` object signat
 So, in our example system, we use the nvcc to compile `gcc.cpp`:
 
 ```shell
-$ nvcc -std=c++17 -x cu -c ../gcc.cpp -o gcc.cpp.o
+$ nvcc -std=c++17 -x cu -c gcc.cpp -o gcc.cpp.o
 nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
 ```
 
@@ -178,7 +180,7 @@ bar(thrust::THRUST_200700_520_NS::host_vector<int, std::allocator<int> >&)
 Now the function signature matches between the two object files, and we can link and execute the code.
 
 ```shell
-$ g++ -std=c++17 ../main.cpp nvcc.cu.o gcc.cpp.o -L /usr/local/cuda-12/lib64/ -lcudart -o main
+$ g++ -std=c++17 main.cpp nvcc.cu.o gcc.cpp.o -L /usr/local/cuda-12/lib64/ -lcudart -o main
 $ ./main
 std::vector 11
 thrust::vector 11
@@ -191,6 +193,11 @@ set_source_files_properties(gcc.cpp PROPERTIES LANGUAGE CUDA)
 ```
 
 This will be the workaround in AMSO for now until this bug gets fixed within `thrust`.
+
+## Bug Report
+
+I reported this bug to nvidia and you can find it here.
+I am trying to update this post if this gets resolved.
 
 ---
 
